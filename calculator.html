@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Michael's Angular Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+	<script type="text/javascript" src="calc-controller.js"></script>
+</head>
+<body ng-app="calculator">
+	<div ng-controller="calc-controller" id="calcbody" class="clear">
+		<p id="output">{{currentNum}}</p>
+
+		<div id="btns" class="clear">
+			<div id="numbtns" class="left">
+				<button class="nums" ng-repeat="num in btnNums" ng-click="updateCurrentNum(num)">{{num}}</button>
+				<button class="operations" ng-click="clear()">C</button>
+				<button class="operations" ng-click="calculate()">=</button>
+			</div><!-- end numbtns -->
+
+			<div id="operationsbtns" class="right">
+				<button class="operations" ng-repeat="op in operationsList" ng-click="operation(op)">{{op}}</button>
+			</div><!-- end operationsbtns -->
+		</div><!-- end btns -->
+		
+	</div><!-- end calcbody -->
+
+</body>
+</html>

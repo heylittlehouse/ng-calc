@@ -1,0 +1,55 @@
+a{
+	text-decoration: none;
+	color: black;
+}
+
+.nums{
+	max-height: 30px;
+	max-width: 40px;
+	background-color: orange;
+	padding: 15px;
+	margin: 5px;
+}
+
+.operations{
+	max-height: 30px;
+	max-width: 40px;
+	padding: 15px;
+	margin: 5px;
+}
+
+#output{
+	height: 50px;
+	width: 200px;
+	color: white;
+	background-color: black;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#calcbody{
+	width: 220px;
+	background-color: blue;
+	padding: 10px;
+	min-height: 280px;
+}
+
+#numbtns{
+	width: 160px
+}
+
+#operationsbtns{
+	width: 50px;
+}
+
+.clear{
+	clear: both;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
